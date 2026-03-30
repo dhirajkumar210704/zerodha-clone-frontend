@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import api from "../../api";
 import { toast } from "react-toastify";
 
-function Signup() {
-  
+function Login() {
+
   const [inputValue, setInputValue] = useState({
     email: "",
     password: "",
-    username: "",
   });
-  const { email, password, username } = inputValue;
+
+  const { email, password } = inputValue;
 
   const handleOnChange = (e) => {
     const { name, value } = e.target;
@@ -23,7 +23,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await api.post("/signup", inputValue);
+      const { data } = await api.post("/login", inputValue);
 
       if (data.success) {
         toast.success(data.message);
@@ -34,25 +34,22 @@ function Signup() {
         toast.error(data.message);
       }
     } catch (error) {
-      toast.error("Signup failed");
+      toast.error("Invalid credentials");
       console.error(error);
     }
 
     setInputValue({
       email: "",
       password: "",
-      username: "",
     });
   };
-
-  return (  
+  return ( 
     <div className="container d-flex justify-content-center align-items-center min-vh-100">
       <div className="col-md-4">
         <div className="card shadow-sm p-4">
-          <h3 className="text-center mb-4">Create your Zerodha account</h3>
+          <h3 className="text-center mb-4">Login to Zerodha</h3>
 
           <form onSubmit={handleSubmit}>
-        {/* Email */}
             <div className="mb-3">
               <label className="form-label">Email address</label>
               <input
@@ -66,21 +63,6 @@ function Signup() {
               />
             </div>
 
-            {/* Username */}
-            <div className="mb-3">
-              <label className="form-label">Username</label>
-              <input
-                type="text"
-                name="username"
-                value={username}
-                className="form-control"
-                placeholder="Choose a username"
-                onChange={handleOnChange}
-                required
-              />
-            </div>
-
-            {/* Password */}
             <div className="mb-3">
               <label className="form-label">Password</label>
               <input
@@ -88,19 +70,19 @@ function Signup() {
                 name="password"
                 value={password}
                 className="form-control"
-                placeholder="Create a password"
+                placeholder="Enter password"
                 onChange={handleOnChange}
                 required
               />
             </div>
 
             <button type="submit" className="btn btn-dark w-100">
-              Create Account
+              Login
             </button>
 
             <div className="text-center mt-3">
               <small>
-                Already have an account? <Link to="/login">Login</Link>
+                New to Zerodha? <Link to="/signup">Create account</Link>
               </small>
             </div>
           </form>
@@ -108,7 +90,8 @@ function Signup() {
       </div>
     </div>
 
+
   );
 }
 
-export default Signup;
+export default Login;
