@@ -7,7 +7,7 @@ function Hero() {
       {/* Top bar */}
       <div className="d-flex justify-content-between align-items-center px-5 mb-5">
         <h5 className="mb-0">Support Portal</h5>
-        <a href="#" className="text-white text-decoration-underline">
+        <a href="/support" className="text-white text-decoration-underline">
           Track Tickets
         </a>
       </div>
@@ -28,16 +28,16 @@ function Hero() {
           />
 
           <div className="d-flex flex-wrap gap-3">
-            <a href="#" className="text-white text-decoration-underline">
+            <a href="/support" className="text-white text-decoration-underline">
               Track account opening
             </a>
-            <a href="#" className="text-white text-decoration-underline">
+            <a href="/support" className="text-white text-decoration-underline">
               Track segment activation
             </a>
-            <a href="#" className="text-white text-decoration-underline">
+            <a href="/support" className="text-white text-decoration-underline">
               Intraday margins
             </a>
-            <a href="#" className="text-white text-decoration-underline">
+            <a href="/support" className="text-white text-decoration-underline">
               Kite user manual
             </a>
           </div>
@@ -48,12 +48,12 @@ function Hero() {
           <h2 className="fw-normal mb-3">Featured</h2>
           <ol className="ps-3">
             <li className="mb-2">
-              <a href="#" className="text-white text-decoration-underline">
+              <a href="/support" className="text-white text-decoration-underline">
                 Current Takeovers and Delisting – January 2024
               </a>
             </li>
             <li>
-              <a href="#" className="text-white text-decoration-underline">
+              <a href="/support" className="text-white text-decoration-underline">
                 Latest Intraday leverages – MIS & CO
               </a>
             </li>

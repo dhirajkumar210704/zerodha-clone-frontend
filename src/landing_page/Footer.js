@@ -11,52 +11,52 @@ function Footer() {
               &copy; 2010 - 2024, Not Zerodha Broking Ltd. All rights reserved.
             </p>
             <div className=" text-muted">
-              <a href="#"><i class="fa-brands fa-square-twitter me-3 fa-lg"></i></a> 
-              <a href="#"><i class="fa-brands fa-facebook me-3 fa-lg"></i></a>
-              <a href="#"><i class="fa-brands fa-square-instagram me-3 fa-lg"></i></a>  
-              <a href="#"><i class="fa-brands fa-square-linkedin me-3 fa-lg"></i></a> 
-              <a href="#"><i class="fa-brands fa-telegram me-3 fa-lg"></i></a> 
+              <a href="https://x.com/"><i class="fa-brands fa-square-twitter me-3 fa-lg"></i></a> 
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook me-3 fa-lg"></i></a>
+              <a href="https://instagram.com/"><i class="fa-brands fa-square-instagram me-3 fa-lg"></i></a>  
+              <a href="https://linkedin.com/"><i class="fa-brands fa-square-linkedin me-3 fa-lg"></i></a> 
+              <a href="https://telegram.com/"><i class="fa-brands fa-telegram me-3 fa-lg"></i></a> 
             </div>
           </div>
           <div className="col">
             <p className="fw-medium mb-3">Company</p>
-            <a href="#" className="d-block mb-3 text-decoration-none text-muted">About</a>
+            <a href="/about" className="d-block mb-3 text-decoration-none text-muted">About</a>
             
-            <a href="#" className="d-block mb-3 text-decoration-none text-muted">Products</a>
+            <a href="/product" className="d-block mb-3 text-decoration-none text-muted">Products</a>
             
-            <a href="#" className="d-block mb-3 text-decoration-none text-muted">Pricing</a>
+            <a href="/pricing" className="d-block mb-3 text-decoration-none text-muted">Pricing</a>
             
-            <a href="#" className="d-block mb-3 text-decoration-none text-muted">Referral programme</a>
+            <a href="/signup" className="d-block mb-3 text-decoration-none text-muted">Referral programme</a>
             
-            <a href="#" className="d-block mb-3 text-decoration-none text-muted">Careers</a>
+            <a href="/product" className="d-block mb-3 text-decoration-none text-muted">Careers</a>
             
-            <a href="#" className="d-block mb-3 text-decoration-none text-muted">Zerodha.tech</a>
+            <a href="/product" className="d-block mb-3 text-decoration-none text-muted">Zerodha.tech</a>
             
-            <a href="#" className="d-block mb-3 text-decoration-none text-muted">Press & media</a>
+            <a href="/procuct" className="d-block mb-3 text-decoration-none text-muted">Press & media</a>
             
-            <a href="#" className="d-block mb-3 text-decoration-none text-muted">Zerodha cares (CSR)</a>
+            <a href="/product" className="d-block mb-3 text-decoration-none text-muted">Zerodha cares (CSR)</a>
             
           </div>
           <div className="col">
             <p className="fw-medium mb-3">Support</p>
-            <a href="#" className="d-block mb-3 text-decoration-none text-muted">Contact</a>
+            <a href="support" className="d-block mb-3 text-decoration-none text-muted">Contact</a>
             
-            <a href="#" className="d-block mb-3 text-decoration-none text-muted">Support portal</a>
+            <a href="support" className="d-block mb-3 text-decoration-none text-muted">Support portal</a>
             
-            <a href="#" className="d-block mb-3 text-decoration-none text-muted">Z-Connect blog</a>
+            <a href="/blog" className="d-block mb-3 text-decoration-none text-muted">Z-Connect blog</a>
             
-            <a href="#" className="d-block mb-3 text-decoration-none text-muted">List of charges</a>
+            <a href="/charges" className="d-block mb-3 text-decoration-none text-muted">List of charges</a>
             
-            <a href="#" className="d-block mb-3 text-decoration-none text-muted">Downloads & resources</a>
+            <a href="https://play.google.com/store/apps/details?id=com.zerodha.kite3&hl=en-US" className="d-block mb-3 text-decoration-none text-muted">Downloads & resources</a>
             
           </div>
           <div className="col">
             <p className="fw-medium mb-3">Account</p>
-            <a href="#" className="d-block mb-3 text-decoration-none text-muted">Open an account</a>
+            <a href="/signup" className="d-block mb-3 text-decoration-none text-muted">Open an account</a>
             
-            <a href="#" className="d-block mb-3 text-decoration-none text-muted">Fund transfer</a>
+            <a href="/signup" className="d-block mb-3 text-decoration-none text-muted">Fund transfer</a>
             
-            <a href="#" className="d-block mb-3 text-decoration-none text-muted">60 day challenge</a>
+            <a href="/signup" className="d-block mb-3 text-decoration-none text-muted">60 day challenge</a>
             
           </div>
         </div>
@@ -107,13 +107,13 @@ function Footer() {
           </p>
         </div>
         <div className="text-center mb-3">
-          <a className="text-decoration-none me-5 text-muted" href="#">NSE</a>
-          <a className="text-decoration-none  me-5 text-muted" href="#">BMC</a>
-          <a className="text-decoration-none  me-5 text-muted" href="#">MCX</a>
-          <a className="text-decoration-none  me-5 text-muted" href="#">Terms & conditions</a>
-          <a className="text-decoration-none  me-5 text-muted" href="#">Policies & procedures</a>
-          <a className="text-decoration-none  me-5 text-muted" href="#">Privacy policy</a>
-          <a className="text-decoration-none  me-5 text-muted" href="#">Disclosure</a>
+          <a className="text-decoration-none me-5 text-muted" href="/">NSE</a>
+          <a className="text-decoration-none  me-5 text-muted" href="/">BMC</a>
+          <a className="text-decoration-none  me-5 text-muted" href="/">MCX</a>
+          <a className="text-decoration-none  me-5 text-muted" href="/pricing">Terms & conditions</a>
+          <a className="text-decoration-none  me-5 text-muted" href="about">Policies & procedures</a>
+          <a className="text-decoration-none  me-5 text-muted" href="/support">Privacy policy</a>
+          <a className="text-decoration-none  me-5 text-muted" href="/about">Disclosure</a>
         </div>
       </div>
     </footer>
