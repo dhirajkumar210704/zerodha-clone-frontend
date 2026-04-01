@@ -28,7 +28,7 @@ function Signup() {
       if (data.success) {
         toast.success(data.message);
         setTimeout(() => {
-          window.location.href = "http://localhost:3001";
+          window.location.href = "https://zerodha-clone-dashboard-bv5d.vercel.app/";
         }, 1000);
       } else {
         toast.error(data.message);
