@@ -1,10 +1,11 @@
+/** @format */
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import api from "../../api";
 import { toast } from "react-toastify";
 
 function Signup() {
-  
   const [inputValue, setInputValue] = useState({
     email: "",
     password: "",
@@ -28,7 +29,8 @@ function Signup() {
       if (data.success) {
         toast.success(data.message);
         setTimeout(() => {
-          window.location.href = "zerodha-clone-dashboard-taupe.vercel.app";
+          window.location.href =
+            "https://zerodha-clone-dashboard-bv5d.vercel.app/";
         }, 1000);
       } else {
         toast.error(data.message);
@@ -45,14 +47,14 @@ function Signup() {
     });
   };
 
-  return (  
+  return (
     <div className="container d-flex justify-content-center align-items-center min-vh-100">
       <div className="col-md-4">
         <div className="card shadow-sm p-4">
           <h3 className="text-center mb-4">Create your Zerodha account</h3>
 
           <form onSubmit={handleSubmit}>
-        {/* Email */}
+            {/* Email */}
             <div className="mb-3">
               <label className="form-label">Email address</label>
               <input
@@ -107,7 +109,6 @@ function Signup() {
         </div>
       </div>
     </div>
-
   );
 }
 
